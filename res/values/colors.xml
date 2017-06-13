@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_pink">#EF9595</color>
+    <color name="pink">#FA5858</color>
+    <color name="dark_red">#6B1212</color>
+    <color name="background_color">#4000FF</color>
+    <color name="maroon">#971111</color>
+    <color name="theme_red">#FF00FF</color>
+    <color name="theme_green">#00FF00</color>
+    <color name="theme_blue">#00FFFF</color>
+    <color name="theme_blue_inactive">#003636</color>
+    <color name="theme_red_inactive">#490049</color>
+    <color name="gray">#E5E5E5</color>
+    <color name="gray_medium">#424242</color>
+    <color name="gray_dark">#1C1C1C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

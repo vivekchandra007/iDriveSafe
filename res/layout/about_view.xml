@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_background"
+    android:animateLayoutChanges="true" >
+
+    <ScrollView
+        android:id="@+id/ScrollViewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".75"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/rounded_shape_blue" >
+
+        <RelativeLayout
+            android:id="@+id/rLayLogsMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/tvTagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="57dp"
+                android:shadowColor="@color/maroon"
+                android:shadowRadius="1"
+                android:alpha=".9"
+                android:text="@string/tagLine"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvTagline"
+                android:layout_below="@+id/tvTagline"
+                android:layout_marginTop="9dp"
+                android:text="@string/description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray_dark"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvDeveloperEmailID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDescription"
+                android:layout_alignLeft="@id/tvDescription"
+				android:layout_marginTop="66dp"
+                android:text="@string/developer_EmailID"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/maroon"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvDevelopedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_below="@id/tvDeveloperEmailID"
+				android:layout_alignLeft="@id/tvTagline"
+				android:layout_marginTop="9dp"
+				android:alpha=".9"
+                android:text="@string/developer"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/red"
+                android:textSize="21sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imgVBottomLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/about"
+        android:src="@drawable/logo_about_small" />
+
+</RelativeLayout>

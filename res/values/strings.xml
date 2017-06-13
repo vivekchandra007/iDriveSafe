@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iDriveSafe</string>
+    <string name="status">Status</string>
+    <string name="customize">CUSTOM SETTINGS</string>
+    <string name="logs">LOGS</string>
+    <string name="about">ABOUT</string>
+    <string name="zero">0</string>
+    <string name="location">Location</string>
+    <string name="loading_location">Detecting your present location</string>
+    <string name="welcome_message">Welcome back !!!</string>
+        
+    <string name="safe_mode_active">SAFE MODE ACTIVE</string>
+    <string name="safe_mode_override_message">Do you really want to Override safe mode?</string>
+    <string name="safe_mode_overridden">SAFE MODE OVERRIDEN</string>
+    <string name="demo">DEMO</string>
+    <string name="stop">STOP</string>
+    <string name="active">Active</string>
+    <string name="inactive">Idle : Conserving battery</string>
+    <string name="low_battery">Low Battery</string>
+    <string name="left">Left</string>
+    <string name="right">right</string>
+    <string name="yes">Yes (Recommended choice to drive safe)</string>
+    <string name="no">No (I want to drive risky)</string>
+    <string name="no_logs">No event has been logged till yet.</string>
+    <string name="pref_speed_limit">Safe Speed Limit</string>
+    <string name="pref_profile_to_be_selected">Auto decline calls in Safe Mode?</string>
+    <string name="pref_send_message">Send Message?</string>
+    <string name="pref_auto_message_text">Hi, I am driving right now. Will call you back later</string>
+    <string name="pref_include_speed_in_message">Include current speed in message?</string>
+    <string name="pref_include_locality_in_message">Include current locality in message?</string>
+    <string name="reset">Restore default settings</string>
+    <string name="reset_warning">All your current settings will be lost. Do you want to continue?</string>
+    <string name="reset_success">Default settings applied</string>
+    <string name="label_auto_declined_calls">Auto Declined calls</string>
+    <string name="label_auto_replied_texts">Auto Replied texts</string>
+    <string name="missed_call"> tried calling you</string>
+    <string name="missed_call_but_replied">. Auto-reply was sent.</string>
+    <string name="tagLine">iDriveSafe ... helps you drive Safe</string>
+    <string name="description">This app silences your phone when you are driving past the safe speed limit. If any person calls at that time then the call is declined politely and a user friendly apology message (optional) is sent to the calling person indicating your inability to pick up call. As soon as you drive back under safe speed limit, your phone returns back to normal settings.
+				\n\nAll this happens while you give all your attention on road.</string>
+    <string name="developer">A Vivek Chandra production</string>
+    <string name="developer_EmailID">vivekchandra007@gmail.com</string>
+    <string name="msg_suffix"> - Sent by iDriveSafe :) Get urs at http://goo.gl/KOZlf5</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="app_first_char">i</string>
+    <string name="app_rest_name">drivesafe</string>
+    
+
+</resources>

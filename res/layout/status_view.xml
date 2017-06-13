@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true" >
+
+    <ImageView
+        android:id="@+id/imgVBottomLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/logo_small"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/status"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/theme_blue" />
+
+    <LinearLayout
+        android:id="@+id/lLaySpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvStatus"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:animateLayoutChanges="true"  >
+
+        <TextView
+            android:id="@+id/tvSpeedDigit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/theme_blue_inactive"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="3"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/theme_blue_inactive"
+            android:textSize="180sp" />
+
+        <TextView
+            android:id="@+id/tvSpeedDigit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/theme_blue_inactive"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="3"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/theme_blue_inactive"
+            android:textSize="180sp" />
+
+        <TextView
+            android:id="@+id/tvSpeedDigit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/theme_blue_inactive"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="3"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/theme_blue_inactive"
+            android:textSize="180sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lLaySpeed"
+        android:layout_centerHorizontal="true"
+        android:text="@string/location"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/theme_blue" />
+
+    <RelativeLayout
+        android:id="@+id/rLaySafeModeOuterRing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLocation"
+        android:background="@drawable/outer_ring_glow_red" >
+        
+        <TextView
+            android:id="@+id/tvSafeMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="@color/gray_dark"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/safe_mode_active"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/theme_red" />
+        
+    </RelativeLayout>    
+
+    <RelativeLayout
+        android:id="@+id/rLayLogsOuterRing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgVBottomLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/button_back_small" >
+        
+        <TextView
+        	android:id="@+id/tvLogs"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/logs"
+        	android:layout_centerInParent="true"
+        	android:textAppearance="?android:attr/textAppearanceSmall"
+        	android:textColor="@color/theme_blue" />
+        
+    </RelativeLayout>    
+    
+    <RelativeLayout
+        android:id="@+id/rLayResetToDefaultsOuterRing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgVBottomLogo"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/button_back_small" >
+        
+        <TextView
+        	android:id="@+id/tvDemo"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/demo"
+        	android:layout_centerInParent="true"
+        	android:textAppearance="?android:attr/textAppearanceSmall"
+        	android:textColor="@color/theme_blue" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvRecentLogsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rLayLogsOuterRing"
+        android:layout_marginBottom="-9dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignRight="@+id/rLayLogsOuterRing"
+        android:gravity="center"
+        android:text=""
+        android:padding="3dp"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_shape_red" />
+
+</RelativeLayout>

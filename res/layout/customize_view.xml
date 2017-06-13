@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customize_background3" >
+
+    <ScrollView
+        android:id="@+id/ScrollViewLogs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".6"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/rounded_shape_blue" >
+
+        <RelativeLayout
+            android:id="@+id/rLayLogsMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/lLaySettings1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="9dp" >
+
+                <TextView
+                    android:id="@+id/tvSafeSpeedLimit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pref_speed_limit"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/txtSafeSpeedLimit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="9dp"
+                        android:alpha="1"
+                        android:background="@drawable/rounded_shape_blue"
+                        android:ems="9"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:paddingLeft="9dp"
+                        android:text="90 km/h"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imgVEditSafeSpeedLimit"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignBottom="@+id/txtSafeSpeedLimit"
+                        android:layout_alignRight="@+id/txtSafeSpeedLimit"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginRight="9dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/edit_content"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvProfileToBeSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:text="@string/pref_profile_to_be_selected"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/spinProfiles"
+                        android:layout_width="fill_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/rounded_shape_blue"
+                        android:padding="9dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ListView
+                        android:id="@+id/listVProfiles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/spinProfiles"
+                        android:divider="@drawable/divider_blue"
+                        android:headerDividersEnabled="true" >
+                    </ListView>
+
+                    <ImageView
+                        android:id="@+id/imgVEditSafeSpeedProfile"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignRight="@+id/spinProfiles"
+                        android:layout_alignTop="@+id/spinProfiles"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/dropdown"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rLaySafeModeSendMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvSafeModeSendMsg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:text="@string/pref_send_message"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        android:id="@+id/chkBSafeModeSendMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/cb_selector"
+                        android:layout_alignRight="@id/tvSafeModeSendMsg"
+                        android:layout_marginTop="3dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rLaySafeModeMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/txtSafeModeMsg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="114dp"
+                        android:layout_marginTop="9dp"
+                        android:alpha="1"
+                        android:background="@drawable/rounded_shape_blue"
+                        android:ems="9"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:maxLength="139"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="29dp"
+                        android:text="@string/pref_auto_message_text"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imgVEditSafeModeMsg"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignRight="@+id/txtSafeModeMsg"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="9dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/edit_content"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rLayResetToDefaultsOuterRing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/rounded_shape_blue"
+                    android:elevation="9dp"
+                    android:padding="9dp" >
+					
+                    <ImageView
+                        android:id="@+id/imgVReset"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/reset1"
+                        android:layout_marginTop="1dp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/tvResetToDefaults"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/imgVReset"
+                        android:layout_marginLeft="6dp"
+                        
+                        android:text="@string/reset"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    
+    
+</RelativeLayout>
